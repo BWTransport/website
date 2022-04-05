@@ -1,5 +1,11 @@
 const Button = (props) => {
-  return <div className="bg-{{props.color}} h-10 w-30">{props.text}</div>;
+  return (
+    <a href={props.link}>
+      <button className="bg-blue-800 text-white py-2 px-6 rounded hover:bg-blue-600 duration-500 text-sm sm:text-base text-center">
+        {props.text}
+      </button>
+    </a>
+  );
 };
 
 export default Button;
