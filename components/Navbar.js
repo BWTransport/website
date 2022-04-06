@@ -17,7 +17,7 @@ const Navbar = () => {
           {NavItems.map((link) => (
             <li
               key={link.name}
-              className="m-8 text-sm sm:text-base text-center"
+              className="px-5 text-sm sm:text-base text-center"
             >
               <a
                 className="text-white hover:text-blue-400 duration-500"
