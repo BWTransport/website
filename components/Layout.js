@@ -3,10 +3,10 @@ import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen">
+    <div className="">
       <Navbar />
       {children}
-      <Footer />
+      {/* <Footer className="" /> */}
     </div>
   );
 };
