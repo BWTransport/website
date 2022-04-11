@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className="w-full absolute top-20">
       <div className="w-full flex h-60vh left-0 z-0">
-        <Image src={heroImage} objectFit="cover" />
+        <Image src={heroImage} objectFit="cover" alt="hero-image" />
 
         <div className="grid grid-rows-9 bg-gray-200 flex self-center items-center lg:right-32 md:right-24 sm:right-12 mx-10 right-0 z-10 px-7 py-5 rounded-2xl max-w-xs absolute">
           <h2 className="text-left row-span-4 font-bold text-act-grey text-3xl my-2">
