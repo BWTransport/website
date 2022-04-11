@@ -52,9 +52,12 @@ export default function Home() {
           much more
         </h4>
         <div className="grid justify-center my-8 md:my-8">
-          {cardsData.map((item, index) => {
+          {cardsData.map((item) => {
             return (
-              <div className="flex items-center py-10 rounded-xl bg-gray-200 my-6 max-w-4xl">
+              <div
+                className="flex items-center py-10 rounded-xl bg-gray-200 my-6 max-w-4xl"
+                key=""
+              >
                 <a
                   href={item.link}
                   className="mx-6 md:mx-10 text-4xl md:text-6xl text-act-grey"
