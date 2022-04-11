@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Button from "../components/Button";
-import Card from "../components/Card";
 import heroImage from "../public/van-image-1.JPG";
 import * as BiIcons from "react-icons/bi";
 
