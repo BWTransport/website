@@ -2,6 +2,7 @@ import Image from "next/image";
 import Button from "../components/Button";
 import heroImage from "../public/van-image-1.JPG";
 import * as BiIcons from "react-icons/bi";
+import Head from "next/head";
 
 let cardsData = [
   {
