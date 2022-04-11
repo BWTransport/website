@@ -32,7 +32,9 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <Button text="Book Online" link="/book" className="px-5" />
+          <li>
+            <Button text="Book Online" link="/book" className="px-5" />
+          </li>
         </ul>
       </div>
     </div>

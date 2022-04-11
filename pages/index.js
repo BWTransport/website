@@ -10,18 +10,21 @@ let cardsData = [
     icon: <BiIcons.BiPackage />,
     text: "Professional Service Catering for House Moving, Item Transport and much more",
     link: "/",
+    alt: "home",
   },
   {
     id: "1",
     icon: <BiIcons.BiPackage />,
     text: "Professional Service Catering for House Moving, Item Transport and much more",
     link: "/",
+    alt: "home",
   },
   {
     id: "1",
     icon: <BiIcons.BiPackage />,
     text: "Professional Service Catering for House Moving, Item Transport and much more",
     link: "/",
+    alt: "home",
   },
 ];
 
@@ -31,8 +34,13 @@ export default function Home() {
       <Head>
         <title>ACT National</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="Act National | Professional courier service covering all UK Mainlands"
+        />
       </Head>
-      ;
       <div className="w-full absolute top-20">
         <div className="w-full flex h-60vh left-0 z-0">
           <Image src={heroImage} objectFit="cover" alt="hero-image" />
@@ -66,6 +74,7 @@ export default function Home() {
                 >
                   <a
                     href={item.link}
+                    alt={item.alt}
                     className="mx-6 md:mx-10 text-4xl md:text-6xl text-act-grey"
                   >
                     {item.icon}
