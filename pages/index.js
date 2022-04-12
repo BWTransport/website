@@ -3,7 +3,6 @@ import Button from "../components/Button";
 import heroImage from "../public/van-image-1.JPG";
 import * as BiIcons from "react-icons/bi";
 import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
 import Head from "next/head";
 import { socialData } from "../public/socialData";
 
@@ -41,20 +40,20 @@ let footerSocialIcons = [
   {
     key: 1,
     name: "Facebook",
-    link: "https://www.facebook.com",
-    icon: <AiIcons.AiFillFacebook />,
+    link: "https://www.facebook.com/ActNationalCouriers",
+    icon: <FaIcons.FaFacebookSquare />,
   },
   {
     key: 2,
     name: "Instagram",
-    link: "https://www.instagram.com",
-    icon: <AiIcons.AiOutlineInstagram />,
+    link: "https://www.instagram.com/actnationalcouriers/",
+    icon: <FaIcons.FaInstagramSquare />,
   },
   {
     key: 3,
     name: "Phone",
-    link: `tel:${socialData.phone}`,
-    icon: <FaIcons.FaFacebook />,
+    link: "tel:07494945509",
+    icon: <FaIcons.FaPhoneSquareAlt />,
   },
 ];
 
@@ -71,15 +70,14 @@ export default function Home() {
           content="Act National | Professional courier service covering all UK Mainlands"
         />
       </Head>
-      <div className="w-full absolute sm:top-20">
-        <div className="w-full flex h-60vh sm:h-60vh left-0 z-0 justify-center">
+      <div className="w-full absolute top-20">
+        <div className="w-full flex h-60vh z-0">
           <Image src={heroImage} objectFit="cover" alt="hero-image" />
-
-          <div className="self-end grid sm:grid-rows-9 bg-gray-200 sm:self-center sm:items-center lg:right-32 md:right-24 sm:right-12 sm:mx-10 z-10 px-7 py-5 my-12 sm:my-0 rounded-2xl max-w-sm sm:max-w-xs absolute">
-            <h2 className="text-left row-span-4 font-bold text-act-grey text-xl sm:text-3xl my-2">
+          <div className="grid grid-rows-9 bg-gray-200 flex sm:self-center sm:items-center self-center lg:right-32 md:right-24 sm:right-12 mx-10 z-10 px-7 py-5 rounded-2xl max-w-xs absolute">
+            <h2 className="text-left row-span-4 font-bold text-act-grey text-3xl my-2">
               Professional Courier Service
             </h2>
-            <h4 className="text-left text-md sm:text-lg row-span-2 text-act-grey my-2">
+            <h4 className="text-left text-lg row-span-2 text-act-grey my-2">
               Services covering all UK Mainlands
             </h4>
             <div className="row-span-3 my-2">
