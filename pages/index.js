@@ -68,15 +68,15 @@ export default function Home() {
           content="Act National | Professional courier service covering all UK Mainlands"
         />
       </Head>
-      <div className="w-full absolute top-20">
-        <div className="w-full flex h-60vh left-0 z-0">
+      <div className="w-full absolute sm:top-20">
+        <div className="w-full flex h-60vh sm:h-60vh left-0 z-0 justify-center">
           <Image src={heroImage} objectFit="cover" alt="hero-image" />
 
-          <div className="grid grid-rows-9 bg-gray-200 flex self-center items-center lg:right-32 md:right-24 sm:right-12 mx-10 right-0 z-10 px-7 py-5 rounded-2xl max-w-xs absolute">
-            <h2 className="text-left row-span-4 font-bold text-act-grey text-3xl my-2">
+          <div className="self-end grid sm:grid-rows-9 bg-gray-200 sm:self-center sm:items-center lg:right-32 md:right-24 sm:right-12 sm:mx-10 z-10 px-7 py-5 my-12 sm:my-0 rounded-2xl max-w-sm sm:max-w-xs absolute">
+            <h2 className="text-left row-span-4 font-bold text-act-grey text-xl sm:text-3xl my-2">
               Professional Courier Service
             </h2>
-            <h4 className="text-left text-lg row-span-2 text-act-grey my-2">
+            <h4 className="text-left text-md sm:text-lg row-span-2 text-act-grey my-2">
               Services covering all UK Mainlands
             </h4>
             <div className="row-span-3 my-2">
@@ -102,7 +102,7 @@ export default function Home() {
                   <a
                     href={item.link}
                     alt={item.alt}
-                    className="mx-6 md:mx-10 text-4xl md:text-6xl text-act-grey"
+                    className="mx-6 md:mx-10 text-3xl md:text-5xl text-act-grey"
                   >
                     {item.icon}
                   </a>
