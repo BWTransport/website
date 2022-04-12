@@ -32,23 +32,26 @@ let cardsData = [
 ];
 
 let footerNavLinks = [
-  { name: "HOME", link: "/" },
-  { name: "ABOUT US", link: "/about" },
-  { name: "BOOK ONLINE", link: "/book" },
+  { key: 1, name: "HOME", link: "/" },
+  { key: 2, name: "ABOUT US", link: "/about" },
+  { key: 3, name: "BOOK ONLINE", link: "/book" },
 ];
 
 let footerSocialIcons = [
   {
+    key: 1,
     name: "Facebook",
     link: "https://www.facebook.com",
     icon: <AiIcons.AiFillFacebook />,
   },
   {
+    key: 2,
     name: "Instagram",
     link: "https://www.instagram.com",
     icon: <AiIcons.AiOutlineInstagram />,
   },
   {
+    key: 3,
     name: "Phone",
     link: `tel:${socialData.phone}`,
     icon: <FaIcons.FaFacebook />,
@@ -124,7 +127,7 @@ export default function Home() {
           <ul>
             {footerNavLinks.map((item) => {
               return (
-                <li className="my-5">
+                <li key={item.key} className="my-5">
                   <a href={item.link} className="text-lg">
                     {item.name}
                   </a>
@@ -135,7 +138,7 @@ export default function Home() {
           <ul className="flex my-5">
             {footerSocialIcons.map((item) => {
               return (
-                <li className="mr-3">
+                <li key={item.key} className="mr-3">
                   <a href={item.link} className="text-4xl">
                     {item.icon}
                   </a>
