@@ -3,7 +3,7 @@ import Button from "../components/Button";
 import heroImage from "../public/van-image-1.JPG";
 import * as BiIcons from "react-icons/bi";
 import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/Ai";
+import * as AiIcons from "react-icons/ai";
 import Head from "next/head";
 import { socialData } from "../public/socialData";
 
