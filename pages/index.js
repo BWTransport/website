@@ -2,7 +2,10 @@ import Image from "next/image";
 import Button from "../components/Button";
 import heroImage from "../public/van-image-1.JPG";
 import * as BiIcons from "react-icons/bi";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/Ai";
 import Head from "next/head";
+import { socialData } from "../public/socialData";
 
 let cardsData = [
   {
@@ -25,6 +28,30 @@ let cardsData = [
     text: "Professional Service Catering for House Moving, Item Transport and much more",
     link: "/",
     alt: "home",
+  },
+];
+
+let footerNavLinks = [
+  { name: "HOME", link: "/" },
+  { name: "ABOUT US", link: "/about" },
+  { name: "BOOK ONLINE", link: "/book" },
+];
+
+let footerSocialIcons = [
+  {
+    name: "Facebook",
+    link: "https://www.facebook.com",
+    icon: <AiIcons.AiFillFacebook />,
+  },
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com",
+    icon: <AiIcons.AiOutlineInstagram />,
+  },
+  {
+    name: "Phone",
+    link: `tel:${socialData.phone}`,
+    icon: <FaIcons.FaFacebook />,
   },
 ];
 
@@ -57,7 +84,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="m-12 h-screen">
+        <div className="m-12">
           <h2 className="lg:text-4xl md:text-3xl text-2xl sm:mt-16 font-bold text-act-grey text-center">
             Courier Service Covering All UK Mainlands
           </h2>
@@ -65,7 +92,7 @@ export default function Home() {
             Professional Service Catering for House Moving, Item Transport and
             much more
           </h4>
-          <div className="grid justify-center my-8 md:my-8">
+          <div className="grid justify-center mt-8 md:mb-16 mb-12">
             {cardsData.map((item) => {
               return (
                 <div
@@ -85,6 +112,43 @@ export default function Home() {
                 </div>
               );
             })}
+          </div>
+        </div>
+        <div className="bg-act-grey text-white p-6">
+          <div className="text-lg mb-2">
+            Please feel free to contact us with any enquiries:
+          </div>
+          <div className="text-xl my-2">07570 805 627</div>
+          <div className="text-md my-2">bookings@actnationalcouriers.com</div>
+          <hr className="my-5" />
+          <ul>
+            {footerNavLinks.map((item) => {
+              return (
+                <li className="my-5">
+                  <a href={item.link} className="text-lg">
+                    {item.name}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          <ul className="flex my-5">
+            {footerSocialIcons.map((item) => {
+              return (
+                <li className="mr-3">
+                  <a href={item.link} className="text-4xl">
+                    {item.icon}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          <hr />
+          <div className="text-xs my-3">
+            Site created by <a href="https://www.jackbrowne.uk">Jack Browne</a>
+          </div>
+          <div className="text-xs my-3">
+            © 2022 Act National Ltd. All Rights Reserved
           </div>
         </div>
       </div>
