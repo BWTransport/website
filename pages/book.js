@@ -108,7 +108,6 @@ export default function Book() {
                       type="text"
                       name="col-addr-l2"
                       className="rounded block w-full indent-2 h-8"
-                      required
                     />
                   </div>
                 </div>
@@ -180,7 +179,6 @@ export default function Book() {
                       type="text"
                       name="del-addr-l2"
                       className="rounded block w-full indent-2 h-8"
-                      required
                     />
                   </div>
                 </div>
