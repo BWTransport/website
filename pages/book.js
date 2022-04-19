@@ -8,7 +8,7 @@ export default function Book() {
         <h4 className="text-lg text-act-grey text-left mt-2 mb-8">
           Secondary Text Heading
         </h4>
-        <form
+        {/* <form
           name="act-national-enquirys"
           netlify
           netlify-honeypot="bot-field"
@@ -30,9 +30,15 @@ export default function Book() {
           <input type="text" name="del-postcode" />
           <input type="text" name="del-country" />
           <input type="checkbox" name="verify" />
-        </form>
+        </form> */}
 
-        <form name="act-national-enquirys" method="POST" data-netlify="true">
+        <form
+          name="act-national-enquirys"
+          method="POST"
+          action="/?rfp-success=true"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+        >
           <input type="hidden" name="form-name" value="act-national-enquirys" />
           <div className="grid">
             <div className="bg-gray-200 rounded-xl p-5 mb-10">
