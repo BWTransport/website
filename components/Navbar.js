@@ -5,13 +5,13 @@ import Link from "next/link";
 
 let NavItems = [
   { name: "Home", link: "/" },
-  { name: "About Us", link: "/about" },
+  // { name: "About Us", link: "/about" },
 ];
 
 const Navbar = () => {
   return (
-    <div className="shadow-md w-full fixed top-0 left-0 z-40">
-      <div className="flex items-center h-20 justify-between bg-act-grey pr-4">
+    <div className="shadow-md w-full fixed top-0 left-0 z-40 h-20">
+      <div className="flex items-center justify-between bg-act-grey pr-4">
         <div className="cursor-pointer flex items-center">
           <Link href="/" passHref>
             <div className="w-40">

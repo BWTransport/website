@@ -1,14 +1,12 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-const Layout = ({ children }) => {
+export default function Layout({ children }) {
   return (
     <div className="">
       <Navbar />
-      {children}
-      {/* <Footer className="" /> */}
+      <main className="pt-20">{children}</main>
+      <Footer />
     </div>
   );
-};
-
-export default Layout;
+}

@@ -2,9 +2,7 @@ import Image from "next/image";
 import Button from "../components/Button";
 import heroImage from "../public/van-image-1.JPG";
 import * as BiIcons from "react-icons/bi";
-import * as FaIcons from "react-icons/fa";
 import Head from "next/head";
-import { socialData } from "../public/socialData";
 
 let cardsData = [
   {
@@ -30,33 +28,6 @@ let cardsData = [
   },
 ];
 
-let footerNavLinks = [
-  { key: 1, name: "HOME", link: "/" },
-  { key: 2, name: "ABOUT US", link: "/about" },
-  { key: 3, name: "BOOK ONLINE", link: "/book" },
-];
-
-let footerSocialIcons = [
-  {
-    key: 1,
-    name: "Facebook",
-    link: "https://www.facebook.com/ActNationalCouriers",
-    icon: <FaIcons.FaFacebookSquare />,
-  },
-  {
-    key: 2,
-    name: "Instagram",
-    link: "https://www.instagram.com/actnationalcouriers/",
-    icon: <FaIcons.FaInstagramSquare />,
-  },
-  {
-    key: 3,
-    name: "Phone",
-    link: "tel:07494945509",
-    icon: <FaIcons.FaPhoneSquareAlt />,
-  },
-];
-
 export default function Home() {
   return (
     <>
@@ -70,7 +41,7 @@ export default function Home() {
           content="Act National | Professional courier service covering all UK Mainlands"
         />
       </Head>
-      <div className="w-full absolute top-20">
+      <div className="w-full relative">
         <div className="w-full flex h-60vh z-0">
           <Image src={heroImage} objectFit="cover" alt="hero-image" />
           <div className="grid grid-rows-9 bg-gray-200 flex sm:self-center sm:items-center self-center lg:right-32 md:right-24 sm:right-12 mx-10 z-10 px-7 py-5 rounded-2xl max-w-xs absolute">
@@ -85,15 +56,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="m-12">
-          <h2 className="lg:text-4xl md:text-3xl text-2xl sm:mt-16 font-bold text-act-grey text-center">
+        <div className="p-12 bg-white sm:mt-16 sm:mb-10">
+          <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold text-act-grey text-center">
             Courier Service Covering All UK Mainlands
           </h2>
           <h4 className="lg:text-2xl sm:text-xl text-lg text-act-grey text-center sm:mt-10 mt-8">
             Professional Service Catering for House Moving, Item Transport and
             much more
           </h4>
-          <div className="grid justify-center mt-8 md:mb-16 mb-12">
+          <div className="grid justify-center mt-8 lg:mb-16">
             {cardsData.map((item) => {
               return (
                 <div
@@ -115,43 +86,7 @@ export default function Home() {
             })}
           </div>
         </div>
-        <div className="bg-act-grey text-white p-6">
-          <div className="text-lg mb-2">
-            Please feel free to contact us with any enquiries:
-          </div>
-          <div className="text-xl my-2">07570 805 627</div>
-          <div className="text-md my-2">bookings@actnationalcouriers.com</div>
-          <hr className="my-5" />
-          <ul>
-            {footerNavLinks.map((item) => {
-              return (
-                <li key={item.key} className="my-5">
-                  <a href={item.link} className="text-lg">
-                    {item.name}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-          <ul className="flex my-5">
-            {footerSocialIcons.map((item) => {
-              return (
-                <li key={item.key} className="mr-3">
-                  <a href={item.link} className="text-4xl">
-                    {item.icon}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-          <hr />
-          <div className="text-xs my-3">
-            Site created by <a href="https://www.jackbrowne.uk">Jack Browne</a>
-          </div>
-          <div className="text-xs my-3">
-            © 2022 Act National Ltd. All Rights Reserved
-          </div>
-        </div>
+        {/* <Footer /> */}
       </div>
     </>
   );
