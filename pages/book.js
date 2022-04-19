@@ -57,7 +57,7 @@ export default function Book() {
                   <textarea
                     wrap="soft"
                     name="item-description"
-                    maxlength="150"
+                    maxLength="150"
                     placeholder="150 characters max"
                     className="rounded block w-full indent-2 h-20 whitspace-normal"
                     required
@@ -71,7 +71,7 @@ export default function Book() {
                   <textarea
                     wrap="soft"
                     name="extra-info"
-                    maxlength="150"
+                    maxLength="150"
                     placeholder="150 characters max"
                     className="rounded block w-full indent-2 h-20 whitspace-normal"
                   />
