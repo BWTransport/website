@@ -8,7 +8,32 @@ export default function Book() {
         <h4 className="text-lg text-act-grey text-left mt-2 mb-8">
           Secondary Text Heading
         </h4>
-        <form className="" name="booking" method="POST" data-netlify="true">
+        <form
+          name="act-national-enquirys"
+          netlify
+          netlify-honeypot="bot-field"
+          hidden
+        >
+          <input type="text" name="fullname" />
+          <input type="email" name="email" />
+          <input type="tel" name="phone-number" />
+          <textarea name="item-description"></textarea>
+          <textarea name="extra-info"></textarea>
+          <input type="text" name="col-addr-l1" />
+          <input type="text" name="col-addr-l2" />
+          <input type="text" name="col-city" />
+          <input type="text" name="col-postcode" />
+          <input type="text" name="col-country" />
+          <input type="text" name="del-addr-l1" />
+          <input type="text" name="del-addr-l2" />
+          <input type="text" name="del-city" />
+          <input type="text" name="del-postcode" />
+          <input type="text" name="del-country" />
+          <input type="checkbox" name="verify" />
+        </form>
+
+        <form name="act-national-enquirys" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="act-national-enquirys" />
           <div className="grid">
             <div className="bg-gray-200 rounded-xl p-5 mb-10">
               <h3 className="text-md mb-2 font-semibold">
@@ -226,8 +251,13 @@ export default function Book() {
             <div className="bg-gray-200 rounded-xl p-5 mb-10">
               <div className="mx-2 my-2">
                 <label className="text-sm block mt-3 mb-1">
-                  <input type="checkbox" className="m-3" required></input>I
-                  agree for my information to be used only by ACT National for
+                  <input
+                    type="checkbox"
+                    name="verify"
+                    className="m-3"
+                    required
+                  ></input>
+                  I agree for my information to be used only by ACT National for
                   purposes relating to this enquiry{" "}
                 </label>
               </div>
