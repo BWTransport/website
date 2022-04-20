@@ -34,13 +34,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ActNational</title>
+        <title>ActNational Courier Delivery Service | Book Now</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="ActNational | Professional courier service covering all UK Mainlands"
+          content="Hassle free nationwide courier delivery service covering all UK mainlands, specialising in transport of goods of any shape and size, home removals, storage and much more!"
         />
       </Head>
       <div className="w-full relative">
