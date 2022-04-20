@@ -70,7 +70,7 @@ const Footer = () => {
         Site created by <a href="https://www.jackbrowne.uk">Jack Browne</a>
       </div>
       <div className="text-xs my-3">
-        © 2022 Act National Ltd. All Rights Reserved
+        © 2022 ActNational. All Rights Reserved
       </div>
     </div>
   );

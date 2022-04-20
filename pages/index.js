@@ -1,29 +1,31 @@
 import Image from "next/image";
+import Head from "next/head";
 import Button from "../components/Button";
 import heroImage from "../public/van-image-1.JPG";
 import * as BiIcons from "react-icons/bi";
-import Head from "next/head";
+import * as GrIcons from "react-icons/gr";
+import * as BsIcons from "react-icons/bs";
 
 let cardsData = [
   {
     id: "1",
-    icon: <BiIcons.BiPackage />,
-    text: "Professional Service Catering for House Moving, Item Transport and much more",
-    link: "/",
+    icon: <GrIcons.GrDeliver />,
+    text: "Hassle Free Nationwide Courier Delivery Service, Covering all UK Mainlands Starting at £50",
+    link: "/book",
+    alt: "home",
+  },
+  {
+    id: "1",
+    icon: <BsIcons.BsHouseDoor />,
+    text: "House Removals Local and Nationwide Flexible To Serve Your Needs",
+    link: "/book",
     alt: "home",
   },
   {
     id: "1",
     icon: <BiIcons.BiPackage />,
-    text: "Professional Service Catering for House Moving, Item Transport and much more",
-    link: "/",
-    alt: "home",
-  },
-  {
-    id: "1",
-    icon: <BiIcons.BiPackage />,
-    text: "Professional Service Catering for House Moving, Item Transport and much more",
-    link: "/",
+    text: "Safe Storage of Goods in a Secure Facility, Starting from £10 per Week",
+    link: "/book",
     alt: "home",
   },
 ];
@@ -32,20 +34,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ACT National</title>
+        <title>ActNational</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="Act National | Professional courier service covering all UK Mainlands"
+          content="ActNational | Professional courier service covering all UK Mainlands"
         />
       </Head>
       <div className="w-full relative">
         <div className="w-full flex h-60vh z-0">
           <Image src={heroImage} objectFit="cover" alt="hero-image" />
           <div className="grid grid-rows-9 bg-gray-200 flex sm:self-center sm:items-center self-center lg:right-32 md:right-24 sm:right-12 mx-10 z-10 px-7 py-5 rounded-2xl max-w-xs absolute">
-            <h2 className="text-left row-span-4 font-bold text-act-grey text-3xl my-2">
+            <h2 className="text-left row-span-4 font-bold text-black text-3xl my-2">
               Professional Courier Service
             </h2>
             <h4 className="text-left text-lg row-span-2 text-act-grey my-2">
@@ -57,12 +59,11 @@ export default function Home() {
           </div>
         </div>
         <div className="p-12 bg-white sm:mt-16 sm:mb-10">
-          <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold text-act-grey text-center">
-            Courier Service Covering All UK Mainlands
+          <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold text-black text-center">
+            National Delivery Service Transporting Goods of any Shape and Size
           </h2>
           <h4 className="lg:text-2xl sm:text-xl text-lg text-act-grey text-center sm:mt-10 mt-8">
-            Professional Service Catering for House Moving, Item Transport and
-            much more
+            Offering a range of services such as the following...
           </h4>
           <div className="grid justify-center mt-8 lg:mb-16">
             {cardsData.map((item) => {
@@ -74,7 +75,7 @@ export default function Home() {
                   <a
                     href={item.link}
                     alt={item.alt}
-                    className="mx-6 md:mx-10 text-3xl md:text-5xl text-act-grey"
+                    className="mx-6 md:mx-10 text-3xl md:text-5xl text-black"
                   >
                     {item.icon}
                   </a>
