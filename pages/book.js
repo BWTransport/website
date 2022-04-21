@@ -5,7 +5,7 @@ export default function Book() {
     <>
       <Head>
         <title>ActNational | Booking</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/public/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <meta
@@ -14,8 +14,8 @@ export default function Book() {
         />
       </Head>
       <div className="w-full relative">
-        <div className="bg-white m-10">
-          <h2 className="text-2xl font-bold text-black text-left">
+        <div className="bg-gray-100 p-10">
+          <h2 className="text-2xl font-bold text-gray-700 text-left">
             Booking Section
           </h2>
           <h4 className="text-lg text-act-grey text-left mt-2 mb-8">
@@ -36,7 +36,7 @@ export default function Book() {
               value="act-national-enquirys"
             />
             <div className="grid">
-              <div className="bg-gray-200 rounded-xl p-5 mb-10">
+              <div className="bg-white shadow-xl rounded-xl p-5 mb-10">
                 <h3 className="text-md mb-2 font-semibold">
                   Client Information:
                 </h3>
@@ -49,7 +49,7 @@ export default function Book() {
                     <input
                       type="text"
                       name="fullname"
-                      className="rounded block w-full indent-2 h-8"
+                      className="rounded block w-full indent-2 h-8 bg-gray-200"
                       required
                     />
                   </div>
@@ -61,7 +61,7 @@ export default function Book() {
                     <input
                       type="email"
                       name="email"
-                      className="rounded block w-full indent-2 h-8"
+                      className="rounded block w-full indent-2 h-8 bg-gray-200"
                       required
                     />
                   </div>
@@ -73,7 +73,7 @@ export default function Book() {
                     <input
                       type="tel"
                       name="phone-number"
-                      className="rounded block w-full indent-2 h-8"
+                      className="rounded block w-full indent-2 h-8 bg-gray-200"
                       required
                     />
                   </div>
@@ -87,7 +87,7 @@ export default function Book() {
                       name="item-description"
                       maxLength="150"
                       placeholder="150 characters max"
-                      className="rounded block w-full indent-2 h-20 whitspace-normal"
+                      className="rounded block w-full indent-2 h-20 whitespace-normal bg-gray-200"
                       required
                     />
                   </div>
@@ -101,14 +101,14 @@ export default function Book() {
                       name="extra-info"
                       maxLength="150"
                       placeholder="150 characters max"
-                      className="rounded block w-full indent-2 h-20 whitspace-normal"
+                      className="rounded block w-full indent-2 h-20 whitespace-normal bg-gray-200"
                     />
                   </div>
                 </div>
               </div>
 
               <div className="md:grid md:grid-cols-2 md:gap-5">
-                <div className="bg-gray-200 rounded-xl p-5 mb-10">
+                <div className="bg-white shadow-xl rounded-xl p-5 mb-10">
                   <h3 className="text-md mb-2 font-semibold">
                     Collection Address:
                   </h3>
@@ -121,7 +121,7 @@ export default function Book() {
                       <input
                         type="text"
                         name="col-addr-l1"
-                        className="rounded block w-full indent-2 h-8"
+                        className="rounded block w-full indent-2 h-8 bg-gray-200"
                         required
                       />
                     </div>
@@ -135,7 +135,7 @@ export default function Book() {
                       <input
                         type="text"
                         name="col-addr-l2"
-                        className="rounded block w-full indent-2 h-8"
+                        className="rounded block w-full indent-2 h-8 bg-gray-200"
                       />
                     </div>
                   </div>
@@ -148,7 +148,7 @@ export default function Book() {
                       <input
                         type="text"
                         name="col-city"
-                        className="rounded block w-full indent-2 h-8"
+                        className="rounded block w-full indent-2 h-8 bg-gray-200"
                         required
                       />
                     </div>
@@ -162,7 +162,7 @@ export default function Book() {
                       <input
                         type="text"
                         name="col-postcode"
-                        className="rounded block w-full indent-2 h-8"
+                        className="rounded block w-full indent-2 h-8 bg-gray-200"
                         required
                       />
                     </div>
@@ -176,14 +176,14 @@ export default function Book() {
                       <input
                         type="text"
                         name="col-country"
-                        className="rounded block w-full indent-2 h-8"
+                        className="rounded block w-full indent-2 h-8 bg-gray-200"
                         required
                       />
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-gray-200 rounded-xl p-5 mb-10">
+                <div className="bg-white shadow-xl rounded-xl p-5 mb-10">
                   <h3 className="text-md mb-2 font-semibold">
                     Delivery Address:
                   </h3>
@@ -196,7 +196,7 @@ export default function Book() {
                       <input
                         type="text"
                         name="del-addr-l1"
-                        className="rounded block w-full indent-2 h-8"
+                        className="rounded block w-full indent-2 h-8 bg-gray-200"
                         required
                       />
                     </div>
@@ -210,7 +210,7 @@ export default function Book() {
                       <input
                         type="text"
                         name="del-addr-l2"
-                        className="rounded block w-full indent-2 h-8"
+                        className="rounded block w-full indent-2 h-8 bg-gray-200"
                       />
                     </div>
                   </div>
@@ -223,7 +223,7 @@ export default function Book() {
                       <input
                         type="text"
                         name="del-city"
-                        className="rounded block w-full indent-2 h-8"
+                        className="rounded block w-full indent-2 h-8 bg-gray-200"
                         required
                       />
                     </div>
@@ -237,7 +237,7 @@ export default function Book() {
                       <input
                         type="text"
                         name="del-postcode"
-                        className="rounded block w-full indent-2 h-8"
+                        className="rounded block w-full indent-2 h-8 bg-gray-200"
                         required
                       />
                     </div>
@@ -251,7 +251,7 @@ export default function Book() {
                       <input
                         type="text"
                         name="del-country"
-                        className="rounded block w-full indent-2 h-8"
+                        className="rounded block w-full indent-2 h-8 bg-gray-200"
                         required
                       />
                     </div>
@@ -259,7 +259,7 @@ export default function Book() {
                 </div>
               </div>
 
-              <div className="bg-gray-200 rounded-xl p-5 mb-10">
+              <div className="bg-white shadow-xl rounded-xl p-5 mb-10">
                 <div className="mx-2 my-2">
                   <label className="text-sm block mt-3 mb-1">
                     <input
