@@ -1,5 +1,5 @@
 import Button from "./Button";
-import logo from "../media/act-national-logo.png";
+import logo from "../media/bwtransport-logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
