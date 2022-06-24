@@ -11,13 +11,13 @@ const Footer = () => {
     {
       key: 1,
       name: "Facebook",
-      link: "https://www.facebook.com/ActNationalCouriers",
+      link: "https://www.facebook.com/BWTCouriers",
       icon: <FaIcons.FaFacebookSquare />,
     },
     {
       key: 2,
       name: "Instagram",
-      link: "https://www.instagram.com/actnationalcouriers/",
+      link: "https://www.instagram.com/bwtransportltd/",
       icon: <FaIcons.FaInstagramSquare />,
     },
     {
@@ -37,10 +37,10 @@ const Footer = () => {
         07494 945 509
       </a>
       <a
-        href="mailto:bookings@actnationalcouriers.com"
+        href="mailto:bookings@bwtransport.co.uk"
         className="text-md my-2 block"
       >
-        bookings@actnationalcouriers.com
+        bookings@bwtransport.co.uk
       </a>
       <hr className="my-5" />
       <ul>
@@ -70,7 +70,7 @@ const Footer = () => {
         Site created by <a href="https://www.jackbrowne.uk">Jack Browne</a>
       </div>
       <div className="text-xs my-3">
-        © 2022 ActNational. All Rights Reserved
+        © 2022 BWTransport. All Rights Reserved
       </div>
     </div>
   );

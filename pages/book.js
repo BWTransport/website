@@ -4,13 +4,13 @@ export default function Book() {
   return (
     <>
       <Head>
-        <title>ActNational | Booking</title>
+        <title>BWTransport | Booking</title>
         <link rel="icon" href="/public/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="ActNational | Professional courier service covering all UK Mainlands"
+          content="BWTransport | Professional courier service covering all UK Mainlands"
         />
       </Head>
       <div className="w-full relative">
@@ -32,7 +32,7 @@ export default function Book() {
           >
             <input
               type="hidden"
-              name="form-name"
+              name="bot-field"
               value="act-national-enquirys"
             />
             <div className="grid">
@@ -268,7 +268,7 @@ export default function Book() {
                       className="m-3"
                       required
                     ></input>
-                    * I agree for my information to be used only by ActNational
+                    * I agree for my information to be used only by BWTransport
                     for purposes relating to this enquiry{" "}
                   </label>
                 </div>
