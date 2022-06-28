@@ -24,7 +24,7 @@ export default function Book() {
           </h4>
 
           <form
-            name="act-national-enquirys"
+            name="bw-transport-enquirys"
             method="POST"
             action="/?rfp-success=true"
             netlify-honeypot="bot-field"
@@ -33,7 +33,7 @@ export default function Book() {
             <input
               type="hidden"
               name="bot-field"
-              value="act-national-enquirys"
+              value="bw-transport-enquirys"
             />
             <div className="grid">
               <div className="bg-white shadow-xl rounded-xl p-5 mb-10">
