@@ -11,21 +11,21 @@ let cardsData = [
     icon: <RiIcons.RiTruckLine />,
     text: "Hassle Free Nationwide Courier Delivery Service, Covering all UK Mainlands Starting at £50",
     link: "/book",
-    alt: "Booking Page",
+    alt: "Delivery Truck",
   },
   {
     id: "1",
     icon: <BiIcons.BiHome />,
     text: "House Removals Local and Nationwide Flexible To Serve Your Needs",
     link: "/book",
-    alt: "Booking Page",
+    alt: "House",
   },
   {
     id: "1",
     icon: <BiIcons.BiPackage />,
     text: "Safe Storage of Goods in a Secure Facility, Starting from £10 per Week",
     link: "/book",
-    alt: "Booking Page",
+    alt: "Parcel",
   },
 ];
 
