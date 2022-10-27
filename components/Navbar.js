@@ -33,7 +33,12 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <Button text="Book Online" link="/book" className="px-5" />
+            <Button
+              alt="Book online with us"
+              text="Book Online"
+              link="/book"
+              className="px-5"
+            />
           </li>
         </ul>
       </div>

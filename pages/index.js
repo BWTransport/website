@@ -9,23 +9,23 @@ let cardsData = [
   {
     id: "1",
     icon: <RiIcons.RiTruckLine />,
-    text: "Hassle Free Nationwide Courier Delivery Service, Covering all UK Mainlands Starting at £50",
+    text: "Hassle free nationwide courier delivery service covering all UK mainlands, starting at £50",
     link: "/book",
-    alt: "Delivery Truck",
+    alt: "Contact us about delivery needs",
   },
   {
     id: "1",
     icon: <BiIcons.BiHome />,
-    text: "House Removals Local and Nationwide Flexible To Serve Your Needs",
+    text: "House removals local and nationwide flexible to serve your needs",
     link: "/book",
-    alt: "House",
+    alt: "Contact us about your house removal",
   },
   {
     id: "1",
     icon: <BiIcons.BiPackage />,
-    text: "Safe Storage of Goods in a Secure Facility, Starting from £10 per Week",
+    text: "Safe storage of goods in a secure facility, starting from £10 per week",
     link: "/book",
-    alt: "Parcel",
+    alt: "Contact us about storing your goods",
   },
 ];
 
@@ -53,7 +53,11 @@ export default function Home() {
               Services covering all UK Mainlands
             </p>
             <div className="row-span-3 my-2">
-              <Button text="Book Online" link="/book" className="" />
+              <Button
+                alt="Book online with us"
+                text="Book Online"
+                link="/book"
+              />
             </div>
           </div>
         </div>
@@ -67,26 +71,23 @@ export default function Home() {
           <div className="grid justify-center mt-8 lg:mb-16">
             {cardsData.map((item) => {
               return (
-                <div
+                <a
                   className="flex items-center py-10 rounded-xl bg-white my-6 max-w-4xl shadow-xl"
                   key=""
+                  href={item.link}
+                  alt={item.alt}
                 >
-                  <a
-                    href={item.link}
-                    alt={item.alt}
-                    className="mx-6 md:mx-10 text-3xl md:text-5xl text-gray-700"
-                  >
+                  <i className="mx-6 md:mx-10 text-3xl md:text-5xl text-gray-700">
                     {item.icon}
-                  </a>
+                  </i>
                   <div className="text-lg sm:text-xl md:text-2xl mr-6 md:mr-16 text-gray-700">
                     {item.text}
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>
         </div>
-        {/* <Footer /> */}
       </div>
     </>
   );

@@ -2,29 +2,40 @@ import * as FaIcons from "react-icons/fa";
 
 const Footer = () => {
   let footerNavLinks = [
-    { key: 1, name: "HOME", link: "/" },
-    { key: 2, name: "BOOK ONLINE", link: "/book" },
-    // { key: 2, name: "ABOUT US", link: "/about" },
+    { key: 1, name: "HOME", link: "/", alt: "Link to the Home Page" },
+    { key: 2, name: "BOOK ONLINE", link: "/book", alt: "Book online with us" },
   ];
 
   let footerSocialIcons = [
     {
       key: 1,
       name: "Facebook",
-      link: "https://www.facebook.com/BWTCouriers",
-      icon: <FaIcons.FaFacebookSquare />,
+      icon: (
+        <FaIcons.FaFacebookSquare
+          className="text-4xl"
+          href="https://www.facebook.com/BWTCouriers"
+        />
+      ),
+      alt: "Link to our Facebook page",
     },
     {
       key: 2,
       name: "Instagram",
-      link: "https://www.instagram.com/bwtransportltd/",
-      icon: <FaIcons.FaInstagramSquare />,
+      icon: (
+        <FaIcons.FaInstagramSquare
+          className="text-4xl"
+          href="https://www.instagram.com/bwtransportltd/"
+        />
+      ),
+      alt: "Link to our Instagram page",
     },
     {
       key: 3,
       name: "Phone",
-      link: "tel:07494945509",
-      icon: <FaIcons.FaPhoneSquareAlt />,
+      icon: (
+        <FaIcons.FaPhoneSquareAlt className="text-4xl" href="tel:07494945509" />
+      ),
+      alt: "Link to call us",
     },
   ];
 
@@ -33,10 +44,15 @@ const Footer = () => {
       <div className="text-lg mb-2">
         Please feel free to contact us with any enquiries:
       </div>
-      <a href="tel:07494945509" className="text-xl my-2 block">
+      <a
+        alt="Call us to enquire about out services"
+        href="tel:07494945509"
+        className="text-xl my-2 block"
+      >
         07494 945 509
       </a>
       <a
+        alt="Email us about our services"
         href="mailto:bookings@bwtransport.co.uk"
         className="text-md my-2 block"
       >
@@ -47,7 +63,7 @@ const Footer = () => {
         {footerNavLinks.map((item) => {
           return (
             <li key={item.key} className="my-5">
-              <a href={item.link} className="text-lg">
+              <a alt={item.alt} href={item.link} className="text-lg">
                 {item.name}
               </a>
             </li>
@@ -58,16 +74,20 @@ const Footer = () => {
         {footerSocialIcons.map((item) => {
           return (
             <li key={item.key} className="mr-3">
-              <a href={item.link} className="text-4xl">
-                {item.icon}
-              </a>
+              <a alt={item.alt}>{item.icon}</a>
             </li>
           );
         })}
       </ul>
       <hr />
       <div className="text-xs my-3">
-        Site created by <a href="https://www.jackbrowne.uk">Jack Browne</a>
+        Site created by{" "}
+        <a
+          alt="Visit the website creators site"
+          href="https://www.jackbrowne.uk"
+        >
+          Jack Browne
+        </a>
       </div>
       <div className="text-xs my-3">
         © 2022 BWTransport. All Rights Reserved
