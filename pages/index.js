@@ -46,12 +46,12 @@ export default function Home() {
         <div className="w-full flex h-60vh z-0">
           <Image src={heroImage} objectFit="cover" alt="hero-image" />
           <div className="grid grid-rows-9 bg-white shadow-2xl flex sm:self-center sm:items-center self-center lg:right-32 md:right-24 sm:right-12 mx-10 z-10 px-7 py-5 rounded-2xl max-w-xs absolute">
-            <h2 className="text-left row-span-4 font-bold text-gray-700 text-3xl my-2">
+            <h1 className="text-left row-span-4 font-bold text-gray-700 text-3xl my-2">
               Professional Courier Service
-            </h2>
-            <h4 className="text-left text-lg row-span-2 text-act-grey my-2">
+            </h1>
+            <p className="text-left text-lg row-span-2 text-act-grey my-2">
               Services covering all UK Mainlands
-            </h4>
+            </p>
             <div className="row-span-3 my-2">
               <Button text="Book Online" link="/book" className="" />
             </div>
@@ -61,9 +61,9 @@ export default function Home() {
           <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold text-gray-700 text-center">
             National Delivery Service Transporting Goods of any Shape and Size
           </h2>
-          <h4 className="lg:text-2xl sm:text-xl text-lg text-act-grey text-center sm:mt-10 mt-8">
+          <h3 className="lg:text-2xl sm:text-xl text-lg text-act-grey text-center sm:mt-10 mt-8">
             Offering a range of services such as the following...
-          </h4>
+          </h3>
           <div className="grid justify-center mt-8 lg:mb-16">
             {cardsData.map((item) => {
               return (
