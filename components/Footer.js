@@ -10,31 +10,25 @@ const Footer = () => {
     {
       key: 1,
       name: "Facebook",
-      icon: (
-        <FaIcons.FaFacebookSquare
-          className="text-4xl"
-          href="https://www.facebook.com/BWTCouriers"
-        />
-      ),
+      link: "https://www.facebook.com/BWTCouriers",
+      target: "_blank",
+      icon: <FaIcons.FaFacebookSquare className="text-4xl" />,
       alt: "Link to our Facebook page",
     },
     {
       key: 2,
       name: "Instagram",
-      icon: (
-        <FaIcons.FaInstagramSquare
-          className="text-4xl"
-          href="https://www.instagram.com/bwtransportltd/"
-        />
-      ),
+      link: "https://www.instagram.com/bwtransportltd/",
+      target: "_blank",
+      icon: <FaIcons.FaInstagramSquare className="text-4xl" />,
       alt: "Link to our Instagram page",
     },
     {
       key: 3,
       name: "Phone",
-      icon: (
-        <FaIcons.FaPhoneSquareAlt className="text-4xl" href="tel:07494945509" />
-      ),
+      link: "tel:07494945509",
+      target: "_self",
+      icon: <FaIcons.FaPhoneSquareAlt className="text-4xl" />,
       alt: "Link to call us",
     },
   ];
@@ -74,7 +68,10 @@ const Footer = () => {
         {footerSocialIcons.map((item) => {
           return (
             <li key={item.key} className="mr-3">
-              <a alt={item.alt}>{item.icon}</a>
+              <a target={item.target} href={item.link}>
+                <span className="sr-only">{item.alt}</span>
+                {item.icon}
+              </a>
             </li>
           );
         })}
